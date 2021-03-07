@@ -750,6 +750,8 @@ def inputMenu(
 
     if prompt == "_default":
         prompt = "Please select one of the following:\n"
+    else:
+        prompt += "\n"
 
     if numbered:
         prompt += "\n".join([str(i + 1) + ". " + choices[i] for i in range(len(choices))])
